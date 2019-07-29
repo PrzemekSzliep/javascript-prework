@@ -37,7 +37,9 @@ function buttonClicked(argButtonName) {
      */
     function displayResult(argPlayerMove, argComputerMove) {
         console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-        if ((argPlayerMove == 'papier' && argComputerMove == 'kamień') || (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') ||  (argPlayerMove == 'nożyce' && argComputerMove == 'papier')) {
+        if ((argPlayerMove == 'papier' && argComputerMove == 'kamień') ||
+            (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') ||
+            (argPlayerMove == 'nożyce' && argComputerMove == 'papier')) {
             printMessage('Wygrywasz!');
             playerWins = playerWins + 1;
             printWins('player-wins', playerWins)
